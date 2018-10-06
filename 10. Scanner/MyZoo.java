@@ -12,7 +12,7 @@ public class MyZoo{
    //Objects
       Random r = new Random();
       InputXY snakeInput = new InputXY(1,1);
-      InputXY rabbitInput = new InputXY(6,6);
+      InputXY rabbitInput = new InputXY(10,10);
    
    //Print start game
       System.out.println("\t\t\tWelcome to my Little Horror Zoo");
@@ -25,7 +25,6 @@ public class MyZoo{
      //Game
       while (snakeInput.getx() != rabbitInput.getx() || snakeInput.gety() != rabbitInput.gety()){
        
-        
         //Snake move
          snakeInput.move();
          System.out.println("You moved to:\t\t" + snakeInput.getx() + "," + snakeInput.gety());     
@@ -35,23 +34,16 @@ public class MyZoo{
          
         /*Rabbit random move 
         "Sometimes checks if the Snake is near the Rabbit" (dosen't really work)*/
-         if (xcheck != 1 || ycheck != 1){
-            rabbitInput.move2(r.nextInt(9) + 1);
-            System.out.println("Rabbit Jumped to:\t" + rabbitInput.getx() + "," + rabbitInput.gety());
-         }else{
+         if (xcheck <= 1 && ycheck <= 1){
             System.out.println("Rabbit Jumped to:\t" + rabbitInput.getx() + "," + rabbitInput.gety() + " OH! NO! PLZ DON'T EAT ME");
-         }
+         }else{rabbitInput.move2(r.nextInt(9) + 1);
+            System.out.println("Rabbit Jumped to:\t" + rabbitInput.getx() + "," + rabbitInput.gety());                 }
          if (snakeInput.getx() == rabbitInput.getx() && snakeInput.gety() == rabbitInput.gety()){
             System.out.println("OH! NO! I'm Dead!");
          }
-      }   
-      
+      }     
       //Win print dialogbox
       JOptionPane.showMessageDialog(null, "  Congratulations! You Win!");
       JOptionPane.showMessageDialog(null, "  Try Again? Press Ctrl+R");
-   
-   
-   
    }
-
 }

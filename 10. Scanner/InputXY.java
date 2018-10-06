@@ -7,8 +7,8 @@ public class InputXY{
    private int x = 5;
    private int y = 5;  
    private int lok;  
-   private int maxX = 10;
-   private int maxY = 10;
+   private int maxX = 20;
+   private int maxY = 20;
    Scanner scan = new Scanner(System.in);
    
    //constructor
@@ -16,20 +16,16 @@ public class InputXY{
       this.x = x;
       this.y = y;
    }
-  
    //getx
    public int getx(){
       return x;
    }
-  
    //gety
    public int gety(){
       return y;
    }
-   
    //snake move
    public void move(){
-            
       lok = scan.nextInt();
         
       if((lok == 1 || lok == 4 || lok == 7) && x>1){
@@ -52,7 +48,6 @@ public class InputXY{
       
    //rabbit move
    public void move2(int lok){
-      
       if((lok == 1 || lok == 4 || lok == 7) && x>1){
          x=x-1;  
       }
