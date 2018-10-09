@@ -36,8 +36,10 @@ public class MyZoo{
         "Sometimes checks if the Snake is near the Rabbit" (dosen't really work)*/
          if (xcheck <= 1 && ycheck <= 1){
             System.out.println("Rabbit Jumped to:\t" + rabbitInput.getx() + "," + rabbitInput.gety() + " OH! NO! PLZ DON'T EAT ME");
-         }else{rabbitInput.move2(r.nextInt(9) + 1);
-            System.out.println("Rabbit Jumped to:\t" + rabbitInput.getx() + "," + rabbitInput.gety());                 }
+         }
+         else{rabbitInput.move2(r.nextInt(9) + 1);
+            System.out.println("Rabbit Jumped to:\t" + rabbitInput.getx() + "," + rabbitInput.gety());                 
+         }
          if (snakeInput.getx() == rabbitInput.getx() && snakeInput.gety() == rabbitInput.gety()){
             System.out.println("OH! NO! I'm Dead!");
          }

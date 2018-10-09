@@ -44,8 +44,7 @@ public class InputXY{
          JOptionPane.showMessageDialog(null,"   You Quit, You Suck!");
          System.exit(0);
       }
-   }
-      
+   } 
    //rabbit move
    public void move2(int lok){
       if((lok == 1 || lok == 4 || lok == 7) && x>1){
@@ -61,7 +60,6 @@ public class InputXY{
          y=y+1;   
       }          
    }
-
 }
 
 
