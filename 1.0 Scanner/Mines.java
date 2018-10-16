@@ -54,8 +54,8 @@ public class Mines{
    public boolean bombRange(int x, int y){   
    return((x >= this.x -1 & x <= this.x+1) && (y >= this.y -1 & y <= this.y+1));
    }     
-<<<<<<< HEAD
+
 } 
-=======
-}
->>>>>>> 30a5a7e5c1331df0d98ceeaa61d4c41dc3164569
+
+
+
