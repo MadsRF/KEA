@@ -23,7 +23,7 @@ public class SwapArrays {
       
       //Methods call
       swap(a1, 1, 2);
-      swapAll(a1, a2);  
+      swapAll(a1, a2);   
    
       //Print switch
       System.out.println(Arrays.toString(a1)); // 10, 20, 30
