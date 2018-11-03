@@ -7,8 +7,8 @@ public class SwapArrays {
 
    public static void main(String [] args){
    
-      //Objects
-      int[] a1 = {1, 2, 3, 1};
+      //Objects array
+      int[] a1 = {1, 2, 3};
       int[] a2 = {10, 20, 30};
       int[] a3 = {100, 200, 300};
       
