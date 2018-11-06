@@ -6,11 +6,15 @@ public class Zoo{
       
       //normal object
       Snake snake = new Snake("foo", 1,1);
+      
       //objects using polymorphism
       SuperAnimal rabbit = new Rabbit("fuu", 9,9);
       
-      //Object methods 
-      //Object a = new SuperAnimal(); 
+      /*Object method can't be done when class is abstract
+      Object a = new SuperAnimal();*/ 
+      
+      //typecast - when class extends and have a methods that dosen't exixt in Super
+      ((Rabbit) rabbit).makeSound();
       
       //shows start position
       System.out.println(rabbit.getName() + ": " + rabbit.getX() + "," + rabbit.getY());
