@@ -30,17 +30,18 @@ public class Menu{
       if(ans.equals("1")){
          createNew(listOfDogs);
       }   
-      if(ans.equals("2")){
+      else if(ans.equals("2")){
          findAge(listOfDogs);
       }   
-      if(ans.equals("3")){
+      else if(ans.equals("3")){
          System.out.println("Bye");
          System.exit(0);
-      }
+      }else{System.out.println("Wrong input");System.out.println();}
    }
    
    //make new dog
    public void createNew(ArrayList<DogsValues> listOfDogs){
+      
       System.out.println("input your dog's name?");
       name = input.nextLine();
       System.out.println("input your dog's race?");
