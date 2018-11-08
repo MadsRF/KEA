@@ -29,7 +29,7 @@ public class Zoo{
          snake.animalMove();
          rabbit.animalMove();
          
-         //print what happens 
+         //print what happens doing loop
          System.out.println(rabbit.getName() + ": " + rabbit.getX() + "," + rabbit.getY());
          System.out.println(snake.getName() + ": " + snake.getX() + "," + snake.getY());
          

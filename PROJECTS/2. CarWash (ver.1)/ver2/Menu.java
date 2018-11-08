@@ -112,18 +112,16 @@ public class Menu{
       System.out.println("input amount of credit you want on wash card  [200-1000]");
       
       credit = input.nextInt();
-      
-      System.out.println("Insert credit card");
-      Thread.sleep(1000);
-      System.out.println(".");
-      Thread.sleep(1000);
-      System.out.println(".");
-      Thread.sleep(1000);
-      System.out.println("Thank you");
-      
-   
+       
       if(credit < 1001 && credit > 200){
-         washcard.createUser(name, credit, listOfUsers);
+          System.out.println("Insert credit card");
+          Thread.sleep(1000);
+          System.out.println(".");
+          Thread.sleep(1000);
+          System.out.println(".");
+          Thread.sleep(1000);
+          System.out.println("Thank you");
+          washcard.createUser(name, credit, listOfUsers);
       }else{System.out.println("Wrong credit amount");
       }
       

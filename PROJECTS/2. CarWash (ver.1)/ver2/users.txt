@@ -9,3 +9,4 @@ bryan 700
 dumbo 400
 dumbo 300
 haha 2000
+hans 1000

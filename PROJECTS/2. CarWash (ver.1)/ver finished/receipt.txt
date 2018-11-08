@@ -1,1 +1,0 @@
-username: mads   Type: clean   Price: 100   Credit left: 100

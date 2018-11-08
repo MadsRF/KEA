@@ -13,3 +13,5 @@ morten clean 100
 johnny Ultimate 1000
 mads clean 100
 mads clean 100
+hans Ultimate 1000
+hans Maximus 200
