@@ -1,1 +1,1 @@
-username: mads   Type: Ultimate   Price: 1000   Credit left: 500
+username: mads   Type: Exclusive   Price: 400   Credit left: 100

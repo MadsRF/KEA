@@ -1,5 +1,6 @@
 martin 100
 johnny 1200
 ellen 200
-mads 500
+mads 100
 hans 400
+Claus 900

@@ -19,3 +19,4 @@ martin clean 100
 martin clean 100
 mads Ultimate 1000
 hans Maximus 200
+mads Exclusive 400
