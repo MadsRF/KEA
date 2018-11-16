@@ -18,7 +18,7 @@ public class TalTabelMartinHelp{
          
          }
          System.out.println("");  
-      System.out.println(25 % 100);  
+      //System.out.println(25 % 100);  
       }
    
    
