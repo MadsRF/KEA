@@ -1,0 +1,6 @@
+mads mads 12 12345678 mads@mads.dk
+martin larsen 27 12345678 martin@mart.dk
+kevin kevinsen 54 8765432 kev@themag.com
+Mikkel Frederiksen 23 22334455 mikkel@mikkelsen.dk
+mie miesen 32 99887766 mie@mail.fin
+hans hansen 25 12345678 hans@hasn.dk
