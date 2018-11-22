@@ -1,12 +1,14 @@
 import java.util.*;
+import java.io.*;
 
 public class DelfinenMenu{
 
    private Scanner input = new Scanner(System.in);
    private boolean stop = false;
    private String answer = ""; 
+   Betaling unpaid = new Betaling();
    
-   public void startMenu()throws InterruptedException{
+   public void startMenu()throws InterruptedException, FileNotFoundException{
       
       while(stop != true){
       
@@ -74,9 +76,9 @@ public class DelfinenMenu{
       }   
    }
 
-   public void kassere()throws InterruptedException{
+   public void kassere()throws InterruptedException, FileNotFoundException{
       System.out.println("Welcome 'Kassere'");
-      System.out.println("[1] Unpaid bills");
+      System.out.println("[1] Unpaid contingent");
       System.out.println("[2] Exit");
      
       try{   
@@ -84,7 +86,9 @@ public class DelfinenMenu{
          answer = input.next();
          
          if(answer.equals("1")){
-            //go to unpaid bills statistic
+            unpaid.restance();
+            System.out.println("");
+            kassere();      
          }
          else if(answer.equals("2")){
             System.out.println("");
