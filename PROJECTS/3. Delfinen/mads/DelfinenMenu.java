@@ -6,17 +6,13 @@ public class DelfinenMenu{
    private Scanner input = new Scanner(System.in);
    private boolean stop = false;
    private String answer = ""; 
-   MemberHandling member = new MemberHandling();
-   KonkurrenceUdtagelse udtagelse = new KonkurrenceUdtagelse();
+   Restance restance = new Restance();
    
    public void startMenu()throws InterruptedException, FileNotFoundException{
       
-      member.registerMembers();
-      
       while(stop != true){
       
-         System.out.println();
-         System.out.println("~ Welkommen til klub Delfinen ~");
+         System.out.println("Welcome to club Delfinen");
          System.out.println();
          System.out.print("Login: ");
          
@@ -38,18 +34,18 @@ public class DelfinenMenu{
             coach();
          }
          else if(answer.equals("+")){
-            System.out.println("'System lukker ned'");
+            System.out.println("'System shutting down'");
             stop = true;
          }else{
-            System.out.println("'Forkert login'");
+            System.out.println("'Wrong login, try again'");
             System.out.println("");
          }
       }
    }
 
-   public void formand()throws InterruptedException,FileNotFoundException{
-      System.out.println("Velkommen 'Formand'");
-      System.out.println("[1] Opret nyt medlem");
+   public void formand()throws InterruptedException{
+      System.out.println("Welcome 'Formand'");
+      System.out.println("[1] Create new member");
       System.out.println("[2] Exit");
       
       try{
@@ -57,18 +53,17 @@ public class DelfinenMenu{
          answer = input.next();
       
          if(answer.equals("1")){
-            member.newMember();
-            member.saveMembers();
+            //go to create member
          }
          else if(answer.equals("2")){
             System.out.println("");
-            System.out.println("'logger af Formand'");
+            System.out.println("'Logging off Formand'");
             System.out.println("");
             Thread.sleep(500);
             stop = false;
          }else{
             System.out.println("");
-            System.out.println("'Input ikke kendt'");
+            System.out.println("'Input not recognized'");
             System.out.println("");
             Thread.sleep(500);
             formand();
@@ -76,14 +71,14 @@ public class DelfinenMenu{
          }
          
       }catch(InputMismatchException i){
-         System.out.println("'Forkert input'");
+         System.out.println("'Wrong input'");
          System.out.println("");  
       }   
    }
 
    public void kassere()throws InterruptedException, FileNotFoundException{
-      System.out.println("Velkommen 'Kassere'");
-      System.out.println("[1] Ubetalt Kontingent");
+      System.out.println("Welcome 'Kassere'");
+      System.out.println("[1] Unpaid contingent");
       System.out.println("[2] Exit");
      
       try{   
@@ -91,19 +86,19 @@ public class DelfinenMenu{
          answer = input.next();
          
          if(answer.equals("1")){
-            member.restance();
+            restance.entryRead();
             System.out.println("");
             kassere();      
          }
          else if(answer.equals("2")){
             System.out.println("");
-            System.out.println("'Logger af Kasser'");
+            System.out.println("'Logging off Kassere'");
             System.out.println("");
             Thread.sleep(500);
             stop = false;
          }else{
             System.out.println("");
-            System.out.println("'Input ikke kendt'");
+            System.out.println("'Input not recognized'");
             System.out.println("");
             Thread.sleep(500);
             kassere();
@@ -111,16 +106,16 @@ public class DelfinenMenu{
          }
             
       }catch(InputMismatchException i){
-         System.out.println("'Forkert input'");
+         System.out.println("'Wrong input'");
          System.out.println("");      
       } 
    }
    
-   public void coach()throws InterruptedException,FileNotFoundException{
-      System.out.println("Velkommen 'Traner'");
-      System.out.println("[1] Se tranings statistik");      
-      System.out.println("[2] Se konkurrence statistik");
-      System.out.println("[3] Set ny tid");
+   public void coach()throws InterruptedException{
+      System.out.println("Welcome 'Coach'");
+      System.out.println("[1] See training statistic");      
+      System.out.println("[2] See competition statistic");
+      System.out.println("[3] Add new time");
       System.out.println("[4] Exit");   
       
       try{   
@@ -128,30 +123,23 @@ public class DelfinenMenu{
          answer = input.next();
          
          if(answer.equals("1")){
-            System.out.print("Hvilken disiplin?: ");
-            String swimtype = input.next();       
-            udtagelse.trackTimeTraining(swimtype);
-            coach();
+            //go to training statistic/5 fastest
          }
          else if(answer.equals("2")){
-            System.out.print("Hvilken disiplin?: ");
-            String swimtype = input.next();
-            udtagelse.trackTimeCompetition(swimtype);
-            coach();
+            //go to competition statistic/5 fastest
          }
          else if(answer.equals("3")){
-            udtagelse.setNewTime();
-            coach();
+            //setNewTime();
          }         
          else if(answer.equals("4")){
             System.out.println("");
-            System.out.println("'Logger af Traner'");
+            System.out.println("'Logging off Coach'");
             System.out.println("");
             Thread.sleep(500);
             stop = false;
          }else{
             System.out.println("");
-            System.out.println("'Input ikke kendt'");
+            System.out.println("'Input not recognized'");
             System.out.println("");
             Thread.sleep(500);
             coach();
