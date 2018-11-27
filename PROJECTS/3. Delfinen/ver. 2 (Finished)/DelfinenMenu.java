@@ -59,6 +59,7 @@ public class DelfinenMenu{
          if(answer.equals("1")){
             member.newMember();
             member.saveMembers();
+            formand();
          }
          else if(answer.equals("2")){
             System.out.println("");
@@ -82,7 +83,7 @@ public class DelfinenMenu{
    }
 
    public void kassere()throws InterruptedException, FileNotFoundException{
-      System.out.println("Velkommen 'Kassere'");
+      System.out.println("Velkommen 'Kasser'");
       System.out.println("[1] Ubetalt Kontingent");
       System.out.println("[2] Exit");
      
@@ -159,7 +160,7 @@ public class DelfinenMenu{
          }
          
       }catch(InputMismatchException i){
-         System.out.println("'Wrong input'");
+         System.out.println("'Forkert input'");
          System.out.println("");     
       } 
    }   
