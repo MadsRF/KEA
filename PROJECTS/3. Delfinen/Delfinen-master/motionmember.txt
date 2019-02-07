@@ -1,0 +1,11 @@
+mads 29 senior aktiv motionist 1600
+martin 88 passiv passiv motionist 500
+lars 42 senior aktiv motionist 1600
+Ian 70 senior aktiv motionist 1200
+Lars 20 senior passiv motionist 500
+Yette 70 senior aktiv motionist 1200
+Gitte 25 senior aktiv motionist 1600
+Jens 42 senior passiv motionist 500
+Sly 18 junior aktiv motionist 1000
+Lers 10 junior aktiv motionist 1000
+Kalle 12 junior aktiv motionist 1000

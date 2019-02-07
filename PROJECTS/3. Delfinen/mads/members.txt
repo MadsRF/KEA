@@ -1,4 +1,0 @@
-martin larsen 28 15 10 2010 passiv
-mads frederiksen 27 15 12 2015 aktiv
-kasper lydeking  28 15 12 2018 passiv
-mikkel frederiksen 27 15 12 2015 aktiv

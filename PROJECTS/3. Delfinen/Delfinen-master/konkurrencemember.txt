@@ -1,0 +1,6 @@
+hans 32 senior aktiv konkurrence 1600 basse crawl,buttterfly,
+Hanne 13 junior aktiv konkurrence 1000 Bear_G. crawl,butterfly,rygsvomning,
+Thea 32 senior aktiv konkurrence 1600 Arnold_S. crawl,butterfly,
+Kalle 13 junior passiv konkurrence 500 Bear_G. crawl,butterfly,
+Arnold 70 senior aktiv konkurrence 1200 Arnold_S. crawl,butterfly,
+Ester 45 senior passiv konkurrence 500 Arnold_S. crawl,
