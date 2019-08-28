@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Kailua CarRental</title>
+
+    <link rel="stylesheet" type="text/css" href="MyCss.css">
+
+</head>
+<body>
+
+    <div>
+        <h1>Kailua CarRental Update Specific Page</h1>
+
+        <a href="/">
+            <button class="btn">Back</button>
+        </a>
+
+        <form action="/updateSpecificCar" method="post">
+            <label>Car ID</label>
+            <input type="text" name="car_id" placeholder="Car ID"/>
+            <label>Fuel Type</label>
+            <input type="text" name="fuel_type" placeholder="Fuel Type"/>
+            <label>Registration Number</label>
+            <input type="text" name="reg_nr" placeholder="Registration Number"/>
+            <label>First Registration Date [dd/mm-yyyy]</label>
+            <input type="text" name="f_reg_date" placeholder="First Registration Date"/>
+            <label>Odometer</label>
+            <input type="text" name="odometer" placeholder="Odometer"/>
+
+            <input class="btn" type="submit" value="Add new car"/>
+        </form>
+    </div>
+
+</body>
+</html>

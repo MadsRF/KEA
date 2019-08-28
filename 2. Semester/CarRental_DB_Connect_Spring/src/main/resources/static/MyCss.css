@@ -1,0 +1,84 @@
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+h1 {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+body{
+    background-image: url(/P9pf0EZ.jpg);
+    background-repeat: no-repeat;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    font-size: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 2%;
+}
+th{
+    background-color: gray;
+}
+td, th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 4px;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+}
+div{
+    padding-top: 5%;
+    text-align: center;
+}
+form{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    border-style: solid;
+    background-color: white;
+    padding: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 50px;
+}
+iframe{
+    margin-top: 3%;
+    width: 100%;
+}
+.help{
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    }

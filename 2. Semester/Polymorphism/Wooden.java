@@ -1,4 +1,4 @@
-package poly;
+package Polymorphism;
 
 public class Wooden extends Box{
 

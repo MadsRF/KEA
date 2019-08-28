@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Kailua CarRental</title>
+
+    <link rel="stylesheet" type="text/css" href="MyCss.css">
+
+</head>
+<body>
+
+    <div>
+        <h1>Kailua CarRental Search Page</h1>
+
+        <a href="/">
+            <button class="btn">Back</button>
+        </a>
+
+        <table>
+            <tread>
+                <tr>
+                    <th>Id</th>
+                    <th>Fuel Type</th>
+                    <th>Registration Number</th>
+                    <th>First Registration date</th>
+                    <th>Odometer</th>
+                    <th>See more</th>
+                </tr>
+            </tread>
+
+            <tbody>
+                <tr th:each="car: ${cars}">
+                    <td th:text="${car.car_id}"/>
+                    <td th:text="${car.fuel_type}"/>
+                    <td th:text="${car.reg_nr}"/>
+                    <td th:text="${car.f_reg_date}"/>
+                    <td th:text="${car.odometer}"/>
+
+                    <td>
+                        <a th:href="@{'/searchSpecificCar/'+${car.car_id}}">
+                            <button class="btn">See more</button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
+

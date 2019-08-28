@@ -1,0 +1,37 @@
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.header {
+    text-align: center;
+    font-style: italic;
+    font-size: 100px;
+    color: black;
+    background-color: lightskyblue;
+    animation-name: example;
+    animation-duration: 0.2ms;
+    animation-iteration-count: infinite;
+}
+
+.body{
+    text-align: center;
+    background-image: url("cat.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.p{
+    font-size: 30px;
+    border-style: solid;
+    color: black;
+    background-color: lightskyblue;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.divf{
+    width: 100%;
+
+}
